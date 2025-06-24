@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-carousel-project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1d65e26d0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center row-gap-4 align-items-center">
+            <div class="col-lg-6 text-center">
+                <h1 class="display-4" style="font-weight: bold;">Az ország kiemelkedő <br>luxusautó háza!</h1>
+                <p class="lead text-secondary mt-3">Ismerje meg legnépszerűbb modelljeinket és válassza ki az Önhöz leginkább illőt.</p>
+                <di class="row justify-content-center row-gap-3 column-gap-3 mt-3">
+                    <div class="col-lg-4 col-md-5">
+                        <button class="btn btn-outline-primary w-100">Összes modell</button>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <button class="btn btn-primary w-100">Azonnal elvihető modellek</button>
+                    </div>
+                </di>
+            </div>
+            <div class="col-lg-6">
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active position-relative" data-bs-interval="2000">
+                            <div class="carousel-caption positon-absolute" style="bottom: 0;">
+                                <h5 class="d-inline-block">Ferrari</h5>
+                            </div>
+                            <img class="rounded-5 w-100 d-block" src="assets/ferrari.png" alt="ferrari">
+                        </div>
+                        <div class="carousel-item position-relative" data-bs-interval="2000">
+                            <div class="carousel-caption positon-absolute" style="bottom: 0;">
+                                <h5 class="d-inline-block">Lamborghini</h5>
+                            </div>
+                            <img class="rounded-5 d-block w-100" src="assets/lamborghini.jpg" alt="lamborghini">
+                        </div>
+                        <div class="carousel-item position-relative" data-bs-interval="2000">
+                            <div class="carousel-caption positon-absolute" style="bottom: 0;">
+                                <h5 class="d-inline-block">Porsche</h5>
+                            </div>
+                            <img class="rounded-5 d-block w-100" src="assets/porsche.png" alt="porsche">
+                        </div>
+                        <div class="carousel-item position-relative" data-bs-interval="2000">
+                            <div class="carousel-caption positon-absolute" style="bottom: 0;">
+                                <h5 class="d-inline-block">Rolls Royce</h5>
+                            </div>
+                            <img class="rounded-5 d-block w-100" src="assets/rolls_royce.png" alt="rolls_royce">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 justify-content-center">
+                <h2 class="mb-4 text-center" style="font-weight: bold;">Ügyfeleink véleménye rólunk</h2>
+                <div class="carousel slide" id="customers">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#customers" data-bs-slide-to="0" aria-current="true" aria-label="1st customer" class="active bg-primary"></button>
+                        <button type="button" data-bs-target="#customers" data-bs-slide-to="1" aria-label="2nd customer" class="bg-primary"></button>
+                        <button type="button" data-bs-target="#customers" data-bs-slide-to="2" aria-label="3rd customer" class="bg-primary"></button>
+                        <button type="button" data-bs-target="#customers" data-bs-slide-to="3" aria-label="4th customer" class="bg-primary"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img class="mx-auto customer_general" src="assets/customer_1.png" alt="customer 1">
+                            <h3 class="display-6 my-3" style="letter-spacing: 2px;">Tóth Léna</h3>
+                            <div class="mx-auto my-3">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <p class="mx-auto mb-5">Nem rég vásároltam egy prémium autót ettől a luxusautó háztól, és az égész folyamat lenyűgözően elegáns és professzionális volt.
+                                Az autóval és a kiszolgálással is maximálisan elégedett vagyok - valódi luxus élményt nyújtottak!
+                            </p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="mx-auto customer_general" src="assets/customer_2.png" alt="customer 2">
+                            <h3 class="display-6 my-3" style="letter-spacing: 2px;">Olmos Róbert</h3>
+                            <div class="mx-auto my-3">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <p class="mx-auto mb-5">Lenyűgöző élmény volt belépni ebbe a luxusautó házba, ahol a járművek valóban műalkotásokként ragyogtak. 
+                                Az elegancia és a kifinomultság tökéletes harmóniája volt látható minden részletben.</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="mx-auto customer_general" src="assets/customer_3.png" alt="customer 3">
+                            <h3 class="display-6 my-3" style="letter-spacing: 2px;">Vizézy Andrea</h3>
+                            <div class="mx-auto my-3">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <p class="mx-auto mb-5">Már a belépés pillanata is magával ragadott, és amikor végül vásároltam a szalonban, éreztem, hogy egy olyan élmény részesévé váltam, amely valóban kiemelkedik minden másból.
+                                 A járművek nem csupán eleganciát és technológiai újításokat képviselnek, hanem egy olyan életstílust, amely tökéletesen illik hozzám.</p>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <img class="mx-auto customer_general" src="assets/customer_4.png" alt="customer 4">
+                            <h3 class="display-6 my-3" style="letter-spacing: 2px;">Kiss Dávid</h3>
+                            <div class="mx-auto my-3">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            </div>
+                            <p class="mx-auto mb-5">A luxusautó házba lépve azonnal magával ragadott a prémium dizájn és a járművek páratlan eleganciája, melyek minden részletükben kifinomultságot sugároztak.
+                                 Az élmény csúcspontja pedig a vásárlás volt, amikor megtaláltam azt az autót, amely tökéletesen tükrözi az igényeimet és stílusomat.</p>
+                            
+                        </div>
+                    </div>
+                    <button type="button" class="carousel-control-prev" data-bs-target="#customers" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#customers" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center my-5" style="font-weight: bold;">Legnépszerűbb termékcsaládaink</h2>
+    <div class="container">
+        <div class="row justify-content-evenly row-gap-4 mb-4 modells">
+            <div class="col-8 col-lg-3 pb-4 my-5 text-center card">
+                <img class="mx-auto" src="assets/ferrari.png" alt="Ferrari">
+                <h3>Ferrari</h3>
+                <p class="lead">„Tisztán erő és elegancia”</p>
+                <div class="row justify-content-center row-gap-3 column-gap-3">
+                    <div class="col-lg-8 col-md-4">
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#ferrari_details" aria-expanded="false" aria-controls="ferrari_details">Bővebben</button>
+                    </div>
+                    <div class="col-lg-8 col-md-4">
+                        <button type="button" class="btn btn-info w-100" data-bs-toggle="collapse" data-bs-target="#ferrari_contact" aria-expanded="false" aria-controls="ferrari_contact">Érdeklődöm</button>
+                    </div>    
+                </div>
+                <div class="collapse" id="ferrari_details">
+                    <div class="card card-body mt-3">
+                        A Ferrari az olasz autógyártás ikonikus márkája, amelyet 1947-ben alapítottak. Világszerte a teljesítmény, az innováció és a luxus szimbólumaként ismernek, különösen sportautóiról és versenysikereiről,
+                         például a Forma-1-ben. A Ferrari modellek egyedi dizájnjukról, lenyűgöző technológiai megoldásaikról és a vezetés iránti szenvedélyről tanúskodnak.
+                    </div>
+                </div>
+                <div class="collapse" id="ferrari_contact">
+                    <div class="card card-body mt-3">
+                        <u class="lead">Elérhetőségünk:</u>
+                        <div class="d-flex justify-content-center align-items-center column-gap-2 my-2">
+                            <i class="fa-solid fa-phone" style="color: #74C0FC;"></i>
+                            +36 1 123 4567
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mb-2 column-gap-2">
+                            <i class="fa-solid fa-envelope" style="color: #74C0FC;"></i>
+                            contact@luxusautohaz.hu
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-lg-3 pb-4 my-5 text-center card">
+                <img class="mx-auto" src="assets/lamborghini.jpg" alt="Lamborghini">
+                <h3>Lamborghini</h3>
+                <p class="lead">„Teljes adrenalin.”</p>
+                <div class="row justify-content-center row-gap-3 column-gap-3">
+                    <div class="col-lg-8 col-md-4">
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#lamborghini_details" aria-expanded="false" aria-controls="lamborghini_details">Bővebben</button>
+                    </div>
+                    <div class="col-lg-8 col-md-4">
+                        <button type="button" class="btn btn-info w-100" data-bs-toggle="collapse" data-bs-target="#lamborghini_contact" aria-expanded="false" aria-controls="lamborghini_contact">Érdeklődöm</button>
+                    </div>    
+                </div>
+                <div class="collapse" id="lamborghini_details">
+                    <div class="card card-body mt-3">
+                        A Lamborghini az olasz autógyártás egyik csúcsmárkája, amelyet 1963-ban alapítottak. Autóik híresek extrém teljesítményükről, futurisztikus dizájnjukról és exkluzív mivoltukról,
+                         melyek a luxus és a sebesség tökéletes kombinációját nyújtják. A Lamborghini modellek az innováció, a precíz mérnöki munka és a merészség ikonikus megtestesítői.
+                    </div>
+                </div>
+                <div class="collapse" id="lamborghini_contact">
+                    <div class="card card-body mt-3">
+                        <u class="lead">Elérhetőségünk:</u>
+                        <div class="d-flex justify-content-center align-items-center column-gap-2 my-2">
+                            <i class="fa-solid fa-phone" style="color: #74C0FC;"></i>
+                            +36 1 123 4567
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mb-2 column-gap-2">
+                            <i class="fa-solid fa-envelope" style="color: #74C0FC;"></i>
+                            contact@luxusautohaz.hu
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-lg-3 my-5 pb-4 text-center card">
+                <img class="mx-auto" src="assets/porsche.png" alt="Porsche">
+                <h3>Porsche</h3>
+                <p class="lead">„Vezetés művészete.”</p>
+                <div class="row justify-content-center row-gap-3 column-gap-3">
+                    <div class="col-lg-8 col-md-4">
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="collapse" data-bs-target="#porsche_details" aria-expanded="false" aria-controls="porsche_details">Bővebben</button>
+                    </div>
+                    <div class="col-lg-8 col-md-4">
+                        <button type="button" class="btn btn-info w-100" data-bs-toggle="collapse" data-bs-target="#porsche_contact" aria-expanded="false" aria-controls="porsche_contact">Érdeklődöm</button>
+                    </div>    
+                </div>
+                <div class="collapse" id="porsche_details">
+                    <div class="card card-body mt-3">
+                        A Porsche a német prémium autógyártás egyik legismertebb márkája, amelyet 1931-ben alapítottak. Az autók kiemelkednek a precíz mérnöki megoldásokkal,
+                         a sportos teljesítménnyel és a kifinomult dizájnnal. A Porsche modellek a vezetési élmény, a megbízhatóság és az elegancia tökéletes egyensúlyát kínálják.
+                    </div>
+                </div>
+                <div class="collapse" id="porsche_contact">
+                    <div class="card card-body mt-3">
+                        <u class="lead">Elérhetőségünk:</u>
+                        <div class="d-flex justify-content-center align-items-center column-gap-2 my-2">
+                            <i class="fa-solid fa-phone" style="color: #74C0FC;"></i>
+                            +36 1 123 4567
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mb-2 column-gap-2">
+                            <i class="fa-solid fa-envelope" style="color: #74C0FC;"></i>
+                            contact@luxusautohaz.hu
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="display-6 text-center my-4" style="font-weight: bold;">Első ügyfélként vegye igénybe alábbi szolgáltatásainkat</h1>
+
+    <div class="row row-gap-4 justify-content-evenly services my-4 py-4">
+        <div class="col-lg-3 col-md-7 col-10 mx-auto text-center position-relative">
+            <div class="left_service">
+                <img class="img-fluid" src="assets/callback.webp" alt="Visszahívás">
+                <h4 class="position-absolute start-50 translate-middle">Visszahívás</h4>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#callback">
+                    Kérem a Visszahívást
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-7 col-10 mx-auto text-center position-relative">
+            <img class="img-fluid" src="assets/video.webp" alt="Videó">
+            <h4 class="position-absolute start-50 translate-middle">Videó</h4>
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#video">
+                Kérem a videót
+            </button>
+        </div>
+        <div class="col-lg-3 col-md-7 col-10 mx-auto text-center position-relative">
+            <div class="right_service">
+                <img class="img-fluid" src="assets/consultation.webp" alt="Konzultáció">
+                <h4 class="position-absolute start-50 translate-middle">Konzultáció</h4>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#consultation">
+                    Kérem a konzultációt
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="callback" tabindex="-1" aria-labelledby="Visszahívás" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="Visszahívás">Jelentkezés a visszahívásra</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezár"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="lastname">Vezetéknév</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="lastname" aria-describedby="vezetéknév" placeholder="Vezetéknév">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname">Keresztnév</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="firstname" aria-describedby="keresztnév" placeholder="keresztnév">
+                        </div>
+                        <div class="form-group">
+                            <label for="phonenumber">Telefonszám</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="phonenumber" aria-describedby="telefonszám" placeholder="+36 30 123 4567">
+                        </div>
+                        <div class="form check">
+                            <input type="checkbox" class="form-check-input" id="at-check">
+                            <label for="at-check" class="form-check-label">Elfogadom az <a data-bs-toggle="modal" href="#at_callback">Adatvédelmi Tájékoztatót</a></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Bezárás">Bezár</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#callback_success">Jelentkezek</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" id="video" aria-hidden="true" aria-labelledby="Videó">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="fs-5 modal-title" id="video">Bemutató videó igénylése</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezár"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="lastname">Vezetéknév</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="lastname" aria-describedby="vezetéknév" placeholder="Vezetéknév">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname">Keresztnév</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="firstname" aria-describedby="keresztnév" placeholder="Keresztnév">
+                        </div> 
+                        <div class="form-group">
+                            <label for="phonenumber">Telefonszám</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="phonenumber" aria-describedby="telefonszám" placeholder="+36 30 123 4567">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="at-check">
+                            <label for="at-check" class="form-check-label">Elfogadom az <a data-bs-toggle="modal" href="#at_video">Adatkezelési Tájékoztatót</a></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Bezárás">Bezár</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video_success">Jelentkezek</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" id="consultation" aria-hidden="true" aria-labelledby="Konzultáció">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="fs-5 modal-title" id="Konzultáció">Jelentkezés a konzultációra</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezár"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="lastname">Vezetéknév</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="lastname" aria-describedby="vezetéknév" placeholder="Vezetéknév">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname">Keresztnév</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="firstname" aria-describedby="keresztnév" placeholder="Keresztnév">
+                        </div>
+                        <div class="form-group">
+                            <label for="phonenumber">Telefonszám</label>
+                            <input type="text" class="form-control mt-2 mb-4" id="phonenumber" aria-describedby="telefonszám" placeholder="+36 30 123 4567">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="at-check">
+                            <label for="at-check" class="form-check-label">Elfogadom az <a data-bs-toggle="modal" href="#at_consultation">Adatvédelmi Tájékoztatót</a></label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Bezárás">Bezár</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultation_success">Jelentkezek</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" aria-labelledby="adatkez-tajek" id="at_callback">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Adatkezelési Tájékoztató</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="bezár" id="adatkez-tajek"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Alcím 1:</h5>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet nascetur accumsan dapibus purus sagittis varius non quam. Vel sollicitudin nibh dis aptent placerat mattis vivamus erat. Per curabitur molestie faucibus efficitur varius viverra imperdiet. Justo nunc parturient sodales primis integer; lectus accumsan aliquet. Senectus interdum ultrices ad arcu amet et. Netus vivamus sapien nulla; mus scelerisque orci hac pretium suspendisse. Efficitur dolor bibendum; finibus dignissim eu finibus vitae. Aliquam condimentum ultricies congue pulvinar fames at vivamus.</p>
+                    <h5>Alcím 2:</h5>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet nascetur accumsan dapibus purus sagittis varius non quam. Vel sollicitudin nibh dis aptent placerat mattis vivamus erat. Per curabitur molestie faucibus efficitur varius viverra imperdiet. Justo nunc parturient sodales primis integer; lectus accumsan aliquet. Senectus interdum ultrices ad arcu amet et. Netus vivamus sapien nulla; mus scelerisque orci hac pretium suspendisse. Efficitur dolor bibendum; finibus dignissim eu finibus vitae. Aliquam condimentum ultricies congue pulvinar fames at vivamus.</p>
+                    <h5>Alcím 3:</h5>
+                    <p>Integer dapibus nam quam tincidunt nibh platea luctus placerat turpis. Curabitur tempor suscipit tempor ridiculus tincidunt pretium dictum non. Magna quis in suscipit massa magnis gravida habitant ad? Nam et congue curae accumsan velit praesent porta. Lobortis porta nisl nostra parturient pulvinar. Pellentesque eu imperdiet donec vivamus nibh eget justo accumsan vivamus. Sem ante odio mauris eleifend elementum. Massa magna velit facilisis vestibulum aenean sociosqu eu turpis aptent. Lacinia magna senectus vehicula malesuada phasellus facilisis.</p>
+                    <h5>Alcím 4:</h5>
+                    <p>Non scelerisque amet, egestas mauris nunc in hendrerit. Sed accumsan semper nullam dolor aenean aptent nascetur orci. Curabitur sollicitudin et orci eget lacus accumsan taciti. Elementum torquent maximus tincidunt quis nullam fringilla habitasse. Vehicula maecenas tincidunt auctor sagittis fringilla fermentum, maximus finibus. Ornare hendrerit lacinia vivamus sollicitudin ipsum aliquam. Rutrum dui habitasse tempor tempor justo cras et suspendisse nunc. Hac ultricies sagittis nascetur viverra fames non donec dictum.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#callback">Vissza</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" aria-labelledby="adatkez-tajek" id="at_video">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Adatkezelési Tájékoztató</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="bezár" id="adatkez-tajek"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Alcím 1:</h5>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet nascetur accumsan dapibus purus sagittis varius non quam. Vel sollicitudin nibh dis aptent placerat mattis vivamus erat. Per curabitur molestie faucibus efficitur varius viverra imperdiet. Justo nunc parturient sodales primis integer; lectus accumsan aliquet. Senectus interdum ultrices ad arcu amet et. Netus vivamus sapien nulla; mus scelerisque orci hac pretium suspendisse. Efficitur dolor bibendum; finibus dignissim eu finibus vitae. Aliquam condimentum ultricies congue pulvinar fames at vivamus.</p>
+                    <h5>Alcím 2:</h5>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet nascetur accumsan dapibus purus sagittis varius non quam. Vel sollicitudin nibh dis aptent placerat mattis vivamus erat. Per curabitur molestie faucibus efficitur varius viverra imperdiet. Justo nunc parturient sodales primis integer; lectus accumsan aliquet. Senectus interdum ultrices ad arcu amet et. Netus vivamus sapien nulla; mus scelerisque orci hac pretium suspendisse. Efficitur dolor bibendum; finibus dignissim eu finibus vitae. Aliquam condimentum ultricies congue pulvinar fames at vivamus.</p>
+                    <h5>Alcím 3:</h5>
+                    <p>Integer dapibus nam quam tincidunt nibh platea luctus placerat turpis. Curabitur tempor suscipit tempor ridiculus tincidunt pretium dictum non. Magna quis in suscipit massa magnis gravida habitant ad? Nam et congue curae accumsan velit praesent porta. Lobortis porta nisl nostra parturient pulvinar. Pellentesque eu imperdiet donec vivamus nibh eget justo accumsan vivamus. Sem ante odio mauris eleifend elementum. Massa magna velit facilisis vestibulum aenean sociosqu eu turpis aptent. Lacinia magna senectus vehicula malesuada phasellus facilisis.</p>
+                    <h5>Alcím 4:</h5>
+                    <p>Non scelerisque amet, egestas mauris nunc in hendrerit. Sed accumsan semper nullam dolor aenean aptent nascetur orci. Curabitur sollicitudin et orci eget lacus accumsan taciti. Elementum torquent maximus tincidunt quis nullam fringilla habitasse. Vehicula maecenas tincidunt auctor sagittis fringilla fermentum, maximus finibus. Ornare hendrerit lacinia vivamus sollicitudin ipsum aliquam. Rutrum dui habitasse tempor tempor justo cras et suspendisse nunc. Hac ultricies sagittis nascetur viverra fames non donec dictum.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#video">Vissza</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" aria-hidden="true" aria-labelledby="adatkez-tajek" id="at_consultation">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Adatkezelési Tájékoztató</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="bezár" id="adatkez-tajek"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Alcím 1:</h5>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet nascetur accumsan dapibus purus sagittis varius non quam. Vel sollicitudin nibh dis aptent placerat mattis vivamus erat. Per curabitur molestie faucibus efficitur varius viverra imperdiet. Justo nunc parturient sodales primis integer; lectus accumsan aliquet. Senectus interdum ultrices ad arcu amet et. Netus vivamus sapien nulla; mus scelerisque orci hac pretium suspendisse. Efficitur dolor bibendum; finibus dignissim eu finibus vitae. Aliquam condimentum ultricies congue pulvinar fames at vivamus.</p>
+                    <h5>Alcím 2:</h5>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet nascetur accumsan dapibus purus sagittis varius non quam. Vel sollicitudin nibh dis aptent placerat mattis vivamus erat. Per curabitur molestie faucibus efficitur varius viverra imperdiet. Justo nunc parturient sodales primis integer; lectus accumsan aliquet. Senectus interdum ultrices ad arcu amet et. Netus vivamus sapien nulla; mus scelerisque orci hac pretium suspendisse. Efficitur dolor bibendum; finibus dignissim eu finibus vitae. Aliquam condimentum ultricies congue pulvinar fames at vivamus.</p>
+                    <h5>Alcím 3:</h5>
+                    <p>Integer dapibus nam quam tincidunt nibh platea luctus placerat turpis. Curabitur tempor suscipit tempor ridiculus tincidunt pretium dictum non. Magna quis in suscipit massa magnis gravida habitant ad? Nam et congue curae accumsan velit praesent porta. Lobortis porta nisl nostra parturient pulvinar. Pellentesque eu imperdiet donec vivamus nibh eget justo accumsan vivamus. Sem ante odio mauris eleifend elementum. Massa magna velit facilisis vestibulum aenean sociosqu eu turpis aptent. Lacinia magna senectus vehicula malesuada phasellus facilisis.</p>
+                    <h5>Alcím 4:</h5>
+                    <p>Non scelerisque amet, egestas mauris nunc in hendrerit. Sed accumsan semper nullam dolor aenean aptent nascetur orci. Curabitur sollicitudin et orci eget lacus accumsan taciti. Elementum torquent maximus tincidunt quis nullam fringilla habitasse. Vehicula maecenas tincidunt auctor sagittis fringilla fermentum, maximus finibus. Ornare hendrerit lacinia vivamus sollicitudin ipsum aliquam. Rutrum dui habitasse tempor tempor justo cras et suspendisse nunc. Hac ultricies sagittis nascetur viverra fames non donec dictum.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#consultation">Vissza</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" id="callback_success" tabindex="-1" aria-hidden="true" aria-labelledby="sikeres_visszahivas">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="sikeres_visszahivas">Sikeres jelentkezés!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="bezár"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kollégáink mihamarabb felveszik Önnel a kapcsolatot.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success mx-auto" data-bs-dismiss="modal">Bezár</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-keyboard="false" data-bs-backdrop="static" id="video_success" aria-labelledby="sikeres_video" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="fs-4 modal-title" id="sikeres_video">Sikeres igénylés!</h1>
+                    <button type="button" class="btn-close" aria-label="bezár" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Elküldtük a videót a megadott email címre.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success mx-auto" data-bs-dismiss="modal">Bezár</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="consultation_success" tabindex="-1" aria-hidden="true" aria-labelledby="sikeres_konzultacio">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="sikeres_konzultacio">Sikeres jelentkezés!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="bezár"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="my-auto">Kolégáink hamaramosan felveszik Önnel a kapcsolatot időpont egyeztetés céljából.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success mx-auto" data-bs-dismiss="modal">Bezár</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="display-6 text-center my-5" style="font-weight: bold;">Tekintse meg kínálatunkat</h1>
+    <div class="container every-modell">
+        <div class="row justify-content-center" style="column-gap: 200px;">
+            <div class="col-lg-4 col-10 position-relative">
+                <img class="img-fluid rounded-5" style="box-shadow: 0 0 10px black;" src="assets/ferrari.png" alt="Ferrari">
+                <img class="w-25 position-absolute top-0 ferrari-logo" src="assets/ferrari_logo.png" alt="Ferrari logo">
+                <div class="position-absolute top-50 start-100 translate-middle title_and_dropdown ferrari">
+                    <h4 class="ferrari-title">Ferrari</h4>
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bővebben</button>
+                        <ul class="dropdown-menu dropdown-menu-end" style="--bs-dropdown-link-hover-bg: red; --bs-dropdown-link-hover-color: white; ">
+                            <li><h3 class="dropdown-header text-center">Modellek</h3></li>
+                            <li><a class="dropdown-item" href="#">SF90 Spider</a></li>
+                            <li><a class="dropdown-item" href="#">LaFerrari Aperta</a></li>
+                            <li><a class="dropdown-item" href="#">Daytona SP3</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="#">Összes modell</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-10 position-relative">
+                <img class="img-fluid rounded-5" style="box-shadow: 0 0 10px black;" src="assets/lamborghini.jpg" alt="Lamborghini">
+                <img class="w-25 position-absolute top-0 lamborghini-logo" src="assets/lamborghini_logo.png" alt="Lamborghini logo">
+                <div class="title_and_dropdown lamborghini position-absolute translate-middle top-50 start-0">
+                    <h4 class="lamborghini-title">Lamborghini</h4>
+                    <div class="dropdown dropstart d-flex justify-content-end">
+                        <button type="button" class="btn btn-success dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown">Bővebben</button>
+                        <ul class="dropdown-menu dropdown-menu-start" style="--bs-dropdown-link-hover-bg: green; --bs-dropdown-link-hover-color: white;">
+                            <li><h3 class="dropdown-header text-center">Modellek</h3></li>
+                            <li><a class="dropdown-item" href="#">Temerario</a></li>
+                            <li><a class="dropdown-item" href="#">Revuelto</a></li>
+                            <li><a class="dropdown-item" href="#">Huracan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Összes modell</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="column-gap: 300px;">
+            <div class="col-lg-4 col-10 position-relative">
+                <img class="img-fluid rounded-5" style="box-shadow: 0 0 10px black;" src="assets/bentley.jpg" alt="Bentley">
+                <img class="w-25 position-absolute top-0 bentley-logo" src="assets/bentley_logo.png" alt="Bentley logo">
+                <div class="position-absolute top-50 start-100 translate-middle title_and_dropdown bentley">
+                    <h4 class="bentley-title">Bentley</h4>
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bővebben</button>
+                        <ul class="dropdown-menu dropdown-menu-end" style="--bs-dropdown-link-hover-bg: grey; --bs-dropdown-link-hover-color: white; ">
+                            <li><h3 class="dropdown-header text-center">Modellek</h3></li>
+                            <li><a class="dropdown-item" href="#">Bentayga</a></li>
+                            <li><a class="dropdown-item" href="#">Flying Spur</a></li>
+                            <li><a class="dropdown-item" href="#">Mulliner</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="#">Összes modell</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-10 position-relative">
+                <img class="img-fluid rounded-5" style="box-shadow: 0 0 10px black;" src="assets/rolls_royce.png" alt="Rolls Royce">
+                <img class="w-25 position-absolute top-0 rolls-royce-logo" src="assets/rolls_royce_logo.png" alt="Rolls Royce logo">
+                <div class="title_and_dropdown rolls-royce position-absolute translate-middle top-50 start-0">
+                    <h4 class="rolls-royce-title">Rolls Royce</h4>
+                    <div class="dropdown dropstart d-flex justify-content-end">
+                        <button type="button" class="btn btn-dark dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown">Bővebben</button>
+                        <ul class="dropdown-menu dropdown-menu-start" style="--bs-dropdown-link-hover-bg: black; --bs-dropdown-link-hover-color: white;">
+                            <li><h3 class="dropdown-header text-center">Modellek</h3></li>
+                            <li><a class="dropdown-item" href="#">Phantom</a></li>
+                            <li><a class="dropdown-item" href="#">Spectre</a></li>
+                            <li><a class="dropdown-item" href="#">Ghost</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Összes modell</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="column-gap: 400px;">
+            <div class="col-lg-4 col-10 position-relative">
+                <img class="img-fluid rounded-5" style="box-shadow: 0 0 10px black;" src="assets/porsche.png" alt="Porsche">
+                <img class="w-25 position-absolute top-0 porsche-logo" src="assets/porsche_logo.png" alt="Porsche logo">
+                <div class="position-absolute top-50 start-100 translate-middle title_and_dropdown porsche">
+                    <h4 class="porsche-title">Porsche</h4>
+                    <div class="dropdown dropend">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bővebben</button>
+                        <ul class="dropdown-menu dropdown-menu-end" style="--bs-dropdown-link-hover-bg: gold; --bs-dropdown-link-hover-color: white; ">
+                            <li><h3 class="dropdown-header text-center">Modellek</h3></li>
+                            <li><a class="dropdown-item" href="#">Cayman</a></li>
+                            <li><a class="dropdown-item" href="#">Boxster</a></li>
+                            <li><a class="dropdown-item" href="#">Spyder</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="#">Összes modell</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-10 position-relative">
+                <img class="img-fluid rounded-5" style="box-shadow: 0 0 10px black;" src="assets/mercedes.jpg" alt="Mercedes-Benz Royce">
+                <img class="w-25 position-absolute top-0 mercedes-logo" src="assets/mercedes_logo.png" alt="Mercedes-Benz logo">
+                <div class="title_and_dropdown mercedes position-absolute translate-middle top-50 start-0">
+                    <h4 class="mercedes-title">Mercedes-Benz</h4>
+                    <div class="dropdown dropstart d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown">Bővebben</button>
+                        <ul class="dropdown-menu dropdown-menu-start" style="--bs-dropdown-link-hover-bg: grey; --bs-dropdown-link-hover-color: white;">
+                            <li><h3 class="dropdown-header text-center">Modellek</h3></li>
+                            <li><a class="dropdown-item" href="#">S osztály</a></li>
+                            <li><a class="dropdown-item" href="#">Maybach</a></li>
+                            <li><a class="dropdown-item" href="#">AMG GT</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Összes modell</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2 class="text-center my-4">Értékesítse nálunk jelenlegi autóját, vagy számítsa be egy új modell vásárlásába!</h2>
+        <p class="lead text-center mb-4">Amennyiben cserélni kívánja autóját, töltse ki az alábbi egy perces űrlapot és felvesszük Önnel a kapcsolatot.</p>
+        <div class="row justify-content-center mb-4 form_container">
+            <form class="col-10 col-lg-7 col-md-8 col-xl-5 px-4 mx-auto py-4 my-3 urlap">
+                <h4 class="text-center my-2">Tulajdonos elérhetősége</h4>
+                <div class="form-group row column-gap-2 my-3">
+                    <div class="col">
+                        <input type="text" class="form-control" id="lastname" placeholder="Vezetéknév" aria-describedby="vezetéknév" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="firstname" placeholder="Keresztnév" aria-describedby="keresztnév" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="emailadress">Email cím</label>
+                    <input type="email" class="form-control" id="emailadress" aria-describedby="emailcim">
+                    <small class="text-muted form-text" id="emailcim">Email címe megadásával hozzájárul a kapcsolatfelvételhez.</small>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label" for="phonenumb">Telefonszám</label>
+                    <input type="text" class="form-control" id="phonenumb" aria-describedby="telefonszam">
+                    <small class="text-muted form-text" id="telefonszam">Telefonszáma megadásával hozzájárul a kapcsolatfelvételhez.</small>
+                </div>
+                <h4 class="text-center my-3">Gépjármű adatai</h4>
+                <div class="form-group justify-content-center row column-gap-5 row-gap-4">
+                    <div class="col-5">
+                        <label class="col-form-label" for="brand">Márka</label>
+                        <input class="form-control" type="text" id="brand" aria-describedby="márka">
+                    </div>
+                    <div class="col-5">
+                        <label class="col-form-label" for="model">Modell</label>
+                        <input class="form-control" type="text" id="model" aria-describedby="modell">
+                    </div>
+                    <div class="col-5">
+                        <label class="col-form-label" for="year">Évjárat</label>
+                        <input class="form-control" id="year" type="text" aria-describedby="Évjárat">
+                    </div>
+                    <div class="col-5">
+                        <label class="col-form-label" for="smth">Kivitel</label>
+                        <select id="smth" class="form-select">
+                            <option selected>Válasszon...</option>
+                            <option value="terepjaro">Terepjáró</option>
+                            <option value="ferde">Ferdehátú</option>
+                            <option value="lépcsős">Lépcsőshátú</option>
+                            <option value="városi-terep">Városi terepjáró</option>
+                            <option value="egyéb">Egyéb</option>
+                        </select>
+                    </div>
+                    <h5 class="text-center my-1">Autó állapota</h5>
+                    <div class="form-group">
+                        <div class="row">
+                            <span class="col">0</span>
+                            <span class="col text-center">5</span>
+                            <span class="col text-end">10</span>
+                        </div>
+                        <input class="form-control-range w-100 d-block" type="range" min="0" max="10" id="carQuality" aria-describedby="carCondHelp" required>
+                        <small class="text-muted form-text" id="carCondHelp">Kérem értékelje autója állapotát 0-tól 10-ig.</small>
+                    </div>
+                    <div class="form-group row justify-content-evenly my-3">
+                        <div class="col-auto">
+                            <input class="form-check-input" id="ertekesit" value="ertekesit" name="szandek" type="radio">
+                            <label class="form-check-label" for="ertekesit">Értékesítem</label>
+                        </div>
+                        <div class="col-auto">
+                            <input class="form-check-input" id="beszamit" value="beszamit" name="szandek" type="radio">
+                            <label class="form-check-label" for="beszamit">Beszámítom</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3 justify-content-center">
+                        <div class="form-check col-auto">
+                            <input class="form-check-input" type="checkbox" id="form_at">
+                            <label for="form_at">Elfogadom az <a data-bs-toggle="modal" href="#at_form">Adatvédelmi Tájékoztatót.</a></label>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn btn-primary col-auto px-5">Küldés</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="col-10 col-lg-7 align-content-center mx-auto">
+                <img src="assets/purchase_car.jpg" class="w-100 form-img" alt="Autó kereskedés">
+            </div>
+        </div>
+
+        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" id="at_form" aria-describedby="at-form">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Adatkezelési Tájékoztató</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Alcím 1:</h5>
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet nascetur accumsan dapibus purus sagittis varius non quam. Vel sollicitudin nibh dis aptent placerat mattis vivamus erat. Per curabitur molestie faucibus efficitur varius viverra imperdiet. Justo nunc parturient sodales primis integer; lectus accumsan aliquet. Senectus interdum ultrices ad arcu amet et. Netus vivamus sapien nulla; mus scelerisque orci hac pretium suspendisse. Efficitur dolor bibendum; finibus dignissim eu finibus vitae. Aliquam condimentum ultricies congue pulvinar fames at vivamus.</p>
+                        <h5>Alcím 2:</h5>
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Imperdiet nascetur accumsan dapibus purus sagittis varius non quam. Vel sollicitudin nibh dis aptent placerat mattis vivamus erat. Per curabitur molestie faucibus efficitur varius viverra imperdiet. Justo nunc parturient sodales primis integer; lectus accumsan aliquet. Senectus interdum ultrices ad arcu amet et. Netus vivamus sapien nulla; mus scelerisque orci hac pretium suspendisse. Efficitur dolor bibendum; finibus dignissim eu finibus vitae. Aliquam condimentum ultricies congue pulvinar fames at vivamus.</p>
+                        <h5>Alcím 3:</h5>
+                        <p>Integer dapibus nam quam tincidunt nibh platea luctus placerat turpis. Curabitur tempor suscipit tempor ridiculus tincidunt pretium dictum non. Magna quis in suscipit massa magnis gravida habitant ad? Nam et congue curae accumsan velit praesent porta. Lobortis porta nisl nostra parturient pulvinar. Pellentesque eu imperdiet donec vivamus nibh eget justo accumsan vivamus. Sem ante odio mauris eleifend elementum. Massa magna velit facilisis vestibulum aenean sociosqu eu turpis aptent. Lacinia magna senectus vehicula malesuada phasellus facilisis.</p>
+                        <h5>Alcím 4:</h5>
+                        <p>Non scelerisque amet, egestas mauris nunc in hendrerit. Sed accumsan semper nullam dolor aenean aptent nascetur orci. Curabitur sollicitudin et orci eget lacus accumsan taciti. Elementum torquent maximus tincidunt quis nullam fringilla habitasse. Vehicula maecenas tincidunt auctor sagittis fringilla fermentum, maximus finibus. Ornare hendrerit lacinia vivamus sollicitudin ipsum aliquam. Rutrum dui habitasse tempor tempor justo cras et suspendisse nunc. Hac ultricies sagittis nascetur viverra fames non donec dictum.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">Bezárás</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
